@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #343232;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin: 0.5rem;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.generate-alphabetic-password{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.generate-numeric-password{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    
+    padding: 2rem;
+}
+
+.btn-primary{
+    width: fit-content;
+    border-radius: 1rem;
+}
+.password-display {
+    max-width: 30rem;
+    max-height: 5rem;
+    height: 5rem;
+    width: 27rem;
+    border: 1px solid #f4f4f4;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    background-color: rgba(82, 81, 81, 0.8); 
+    color: #fff; 
+    font-size: 1.2rem;
+    overflow: hidden; 
+    white-space: nowrap;
+ 
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* top: 20rem; */
+  }
+  .container-md{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+ 
+  .reload-svg-2{
+    position: inherit;
+    right: 3rem;
+  }
+  .reload-svg-2:hover{
+    transform: scale(1.5);
+  }
+  .password-display::before {
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 0.5rem; 
+  }
+  .navbar{
+    background-color: #cacaca;
+  }
+  .nav-link{
+    color: rgb(41, 40, 40);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .navbar-brand{
+    color: rgb(41, 40, 40);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+  }
+  .nav-link:hover{
+    background-color: #1c1b1b60;
+    border-radius: 1rem;
+    color: #3cd7d4f6;
+  }
+  .navbar-brand:hover{
+    background-color: #1c1b1b60;
+    border-radius: 1rem;
+    color: #3cd7d4f6;
+  }
+  .navbar-collapse{
+    justify-content: space-between;
+  }
+  .copy-password{
+    background-color: #189082;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+  }
+  .copy-password:hover{
+    background-color: #08f4ec;
+    color: #000000;
+  }
+  .passwordLengthSlider{
+    position: relative;
+    top: 1rem;
+    left: 6.5rem;
+    padding: 1rem;
+    
+  }
+  .passwordLengthLabel{
+    color: white;
+    position: relative;
+    /* top: 21rem; */
+    right: 17rem;
+  }
+  .passwordLengthLabel-2{
+    color: white;
+    position: relative;
+    /* top: 21rem; */
+    right: 17rem;
+  }
+  .sliderSelect{
+    background-color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    font-weight: 300;
+    position: relative;
+    top: 4rem;
+    right: 27rem;
+  }
+  .sliderSelect-2{
+    background-color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    font-weight: 300;
+    position: relative;
+    top: 4rem;
+    right: 27rem;
+  }
+  .sliderSelect:hover{
+    background-color: #a5a2a2;
+  }
+  .sliderSelect-2:hover{
+    background-color: #a5a2a2;
+  }
+  footer {
+    background-color: #c13737;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+  .footer-text{
+    font-size: medium;
+    background-color: #ffffff00;
+    margin-left: 1rem;
+  }
+  input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 50%;
+    background: transparent;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #2497E3;
+    border-radius: 1px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #2497E3;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #2497E3;
+    border-radius: 1px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #2497E3;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #2497E3;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #2497E3;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #2497E3;
+  }
+  .githubLogo{
+    width: 6rem;
+    height: 2rem;
+    margin-left: auto;
+  }
+  
