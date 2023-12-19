@@ -17,4 +17,7 @@ Se está considerando la posibilidad de agregar una función que incluya caracte
 2. Express-Handlebars
 3. Nodemon
 4. Sweet Alert 2
+<<<<<<< HEAD
 
+=======
+>>>>>>> c70b88aacdac60ab9c18d8e5479176dd6fa3a242
