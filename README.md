@@ -12,7 +12,7 @@ Las contraseñas que incluyen caracteres alfabéticos también pueden contener m
 
 Se está considerando la posibilidad de agregar una función que incluya caracteres especiales en las contraseñas, como `%$@#`, entre otros.
 
-##Dependencias que utilice en este proyecto:
+## Dependencias que utilice en este proyecto:
 1. Express.js
 2. Express-Handlebars
 3. Nodemon
