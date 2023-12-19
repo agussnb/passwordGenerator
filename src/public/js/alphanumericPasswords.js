@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedLength = passwordLengthSlider.value;
     try {
       
-      const response = await fetch(`/passwords/numeric/${selectedLength}`)
+      const response = await fetch(`/passwords/alphanumeric/${selectedLength}`)
       const data = await response.json();
 
       passwordDisplay.textContent = `${data.password}`;
